@@ -21,8 +21,23 @@
       <div class="main">
         <div class="title">CBT-PLUS健康管理系统</div>
         <div class="title_line"></div>
-        <div class="content">
-          <div></div>
+        <div class="module">
+          <div class="module_text">
+            <div class="text_title">五大模块</div>
+            <div class="text_des">通过动（运动训练）、眠（睡眠管理）、静（放松训练）、纳（饮食管理）、悟（心理建设）五个方面的学习和训练，帮助用户重建生活方式，提升心理健康水平，疗愈亚健康。每个模块力求做到可量化、可执行、有反馈、可测量，极大提升训练计划的执行效率和疗愈效果，只要两个月、效果看得见。</div>
+          </div>
+          <div class="images">
+            <img src="../../public/image/five_module.png" alt="">
+          </div>
+        </div>
+        <div class="module margin60">
+          <div class="images">
+            <img src="../../public/image/six_module.png" alt="">
+          </div>
+          <div class="module_text">
+            <div class="text_title">六大体系</div>
+            <div class="text_des">基于CBT疗法、营养学、运动医学、助推系统、黄帝内经、智能心理六个子体系建立的健康管理系统，运用中国传统医学理论和移动互联网助推管理系统（Mobile internet-Nudging）对客户进行全方位健康管理，全面提升客户的身心健康水平，从源头上解决亚健康问题。</div>
+          </div>
         </div>
       </div>
     </div>
@@ -88,12 +103,13 @@ export default {
   .main {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
     .title {
       padding-top: 69px;
       font-size: 32px;
       line-height: 47px;
       padding-bottom: 12px;
+      font-weight: 700;
+      text-align: center;
     }
     .title_line {
       width: 120px;
@@ -101,6 +117,32 @@ export default {
       border-radius: 3px;
       background-color: #43B68F;
       margin: 0 auto;
+      text-align: center;
+    }
+    .module {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 60px;
+      .module_text {
+        .text_title {
+          font-size: 28px;
+          line-height: 41px;
+          font-weight: 700;
+        }
+        .text_des {
+          max-width: 517px;
+          padding-top: 31px;
+          font-size: 18px;
+          color: #606266;
+          line-height: 30px;
+        }
+      }
+      .images {
+        img {
+          width: 575px;
+        }
+      }
     }
   }
 }
