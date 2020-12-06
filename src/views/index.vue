@@ -30,7 +30,7 @@
             <img src="../../public/image/five_module.png" alt="">
           </div>
         </div>
-        <div class="module margin60">
+        <div class="module">
           <div class="images">
             <img src="../../public/image/six_module.png" alt="">
           </div>
@@ -39,6 +39,42 @@
             <div class="text_des">基于CBT疗法、营养学、运动医学、助推系统、黄帝内经、智能心理六个子体系建立的健康管理系统，运用中国传统医学理论和移动互联网助推管理系统（Mobile internet-Nudging）对客户进行全方位健康管理，全面提升客户的身心健康水平，从源头上解决亚健康问题。</div>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- 亚健康解决方案 -->
+    <div class="ya">
+      <div class="ya_title">亚健康解决方案</div>
+      <div class="ya_line"></div>
+      <div class="ya_content">
+        <div class="ya_item">
+          <img src="../../public/image/ya01.png" alt="">
+          <div>改善睡眠</div>
+        </div>
+        <div class="ya_item">
+          <img src="../../public/image/ya02.png" alt="">
+          <div>减脂塑身</div>
+        </div>
+        <div class="ya_item">
+          <img src="../../public/image/ya03.png" alt="">
+          <div>增强抵抗力</div>
+        </div>
+        <div class="ya_item">
+          <img src="../../public/image/ya04.png" alt="">
+          <div>美颜养发</div>
+        </div>
+        <div class="ya_item">
+          <img src="../../public/image/ya05.png" alt="">
+          <div>精力管理</div>
+        </div>
+        <div class="ya_item">
+          <img src="../../public/image/ya06.png" alt="">
+          <div>改善情绪</div>
+        </div>
+        <div class="ya_item">
+          <img src="../../public/image/ya07.png" alt="">
+          <div>抗衰老</div>
+        </div>
+        
       </div>
     </div>
   </div>
@@ -98,7 +134,7 @@ export default {
   box-sizing: border-box;
   background-image: url('../../public/image/cbt_bg.png');
   background-repeat: no-repeat;
-  background-size: 100% 1345px;
+  // background-size: cover;
   background-position: center;
   .main {
     max-width: 1200px;
@@ -140,8 +176,48 @@ export default {
       }
       .images {
         img {
-          width: 575px;
+          height: 536px;
         }
+      }
+    }
+  }
+}
+.ya {
+  width: 100%;
+  height: 424px;
+  box-sizing: border-box;
+  background-image: url('../../public/image/ya_bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  .ya_title {
+    text-align: center;
+    font-size: 34px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #fff;
+    padding: 74px 0 12px;
+  }
+  .ya_line {
+    margin: 0 auto;
+    width: 120px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 3px;
+  }
+  .ya_content {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    .ya_item {
+      font-size: 20px;
+      line-height: 30px;
+      color: #fff;
+      text-align: center;
+      img {
+        width: 98px;
       }
     }
   }
