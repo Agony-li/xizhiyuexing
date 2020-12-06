@@ -74,19 +74,32 @@
           <img src="../../public/image/ya07.png" alt="">
           <div>抗衰老</div>
         </div>
-        
       </div>
     </div>
+    <!-- 明星产品 -->
+    <div class="star">
+      <div class="star_title">明星产品</div>
+      <div class="star_line"></div>
+      <div class="star_content">
+        <div class="star_item">
+          <img src="" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- footer组件 -->
+    <Footer></Footer>
   </div>
 </template>
 <script>
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 export default {
   data() {
     return {};
   },
   components:{
-    Header
+    Header,
+    Footer
   },
 };
 </script>
@@ -220,6 +233,29 @@ export default {
         width: 98px;
       }
     }
+  }
+}
+.star {
+  width: 100%;
+  height: 1018px;
+  box-sizing: border-box;
+  background-image: url('../../public/image/star_bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  .star_title {
+    font-size: 32px;
+    line-height: 47px;
+    font-weight: 700;
+    text-align: center;
+    padding: 58px 0 8px;
+  }
+  .star_line {
+    margin: 0 auto;
+    width: 120px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #43B68F;
   }
 }
 </style>
