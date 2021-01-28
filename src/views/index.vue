@@ -82,7 +82,20 @@
       <div class="star_line"></div>
       <div class="star_content">
         <div class="star_item">
-          <img src="" alt="">
+          <img src="../../public/image/left_prd.png" alt="">
+          <div class="des">
+            <p class="title">减脂塑身计划</p>
+            <p class="second_title">CBT-PLUS减脂塑身计划</p>
+            <div class="content">通过211饮食法+减脂运动+睡眠管理+压力管理等四个模块的学习和训练，力求使用户形成良好的生活方式、提升心理调节能力。致力于用更健康、更高效的方式，循序渐进地减脂塑身，拒绝反弹，收获美丽健康、开启全新生活！</div>
+          </div>
+        </div>
+        <div class="star_item">
+          <img src="../../public/image/right_prd.png" alt="">
+          <div class="des">
+            <p class="title">睡眠改善计划</p>
+            <p class="second_title">CBT-PLUS助眠计划</p>
+            <div class="content">通过睡眠管理+放松训练+饮食管理+心肺强化运动+心理建设等五个模块的学习和训练，改善用户生活方式和心理健康水平，从而持续提升用户睡眠能力，从根源上解决您的失眠问题。更安全、更高效，彻底杜绝药物治疗的副作用和依赖性的问题。</div>
+          </div>
         </div>
       </div>
     </div>
@@ -256,6 +269,43 @@ export default {
     height: 6px;
     border-radius: 3px;
     background-color: #43B68F;
+  }
+  .star_content {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 81px;
+    display: flex;
+    justify-content: space-between;
+    .star_item {
+      img {
+        width: 550px;
+        height: 380px;
+        display: block;
+      }
+      .des {
+        width: 550px;
+        height: 254px;
+        background-color: #fff;
+        box-sizing: border-box;
+        .title {
+          text-align: center;
+          font-size: 24px;
+          line-height: 36px;
+          padding: 20px 0 24px;
+        }
+        .second_title {
+          font-size: 18px;
+          line-height: 27px;
+          padding-left: 22px;
+        }
+        .content {
+          font-size: 16px;
+          line-height: 26px;
+          color: #666666;
+          padding: 3px 22px;
+        }
+      }
+    }
   }
 }
 </style>

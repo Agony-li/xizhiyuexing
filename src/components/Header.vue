@@ -2,17 +2,43 @@
   <div class="header">
     <img src="../../public/image/logo.png" alt="">
     <div class="nav">
-      <div>首页</div>
-      <div>产品介绍</div>
-      <div>品牌故事</div>
-      <div>关于我们</div>
+      <div :class="{'active':active=='1'}"><router-link :to="{name:'index', params: {index:'1'}}">首页</router-link></div>
+      <div :class="{'active':active=='2'}"><router-link :to="{name:'Brand', params: {index:'2'}}">产品介绍</router-link></div>
+      <div :class="{'active':active=='3'}"><router-link :to="{name:'Product', params: {index:'3'}}">品牌故事</router-link></div>
+      <div :class="{'active':active=='4'}"><router-link :to="{name:'aboutus', params: {index:'4'}}">关于我们</router-link></div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-
+  data(){
+    return {
+      active: '1'
+    }
+  },
+  mounted(){
+    this.active = this.$route.params.index? this.$route.params.index : '1'
+  },
+  methods:{
+    // gotoPage(index){
+    //   this.active == index
+    //   let path =  ''
+    //   if(index == 1){
+    //     path = '/'
+    //   }
+    //   if(index == 2){
+    //     path = '/brand'
+    //   }
+    //   if(index == 3){
+    //     path = '/product'
+    //   }
+    //   if(index == 4){
+    //     path = '/aboutus'
+    //   }
+    //   this.$router.push({path: path})
+    // }
+  }
 }
 </script>
 
@@ -34,6 +60,13 @@ export default {
     justify-content: space-around;
     div {
       padding-left: 70px;
+      cursor:pointer;
+    }
+    a {
+      color: #333;
+    }
+    .active a{
+      color: #43B68F !important;
     }
   }
 }
