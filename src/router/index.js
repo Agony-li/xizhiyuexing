@@ -17,12 +17,12 @@ const router = new Router({
     },
     {
       path: '/product',
-      name: 'Product',
+      name: 'product',
       component: Product
     },
     {
       path: '/brand',
-      name: 'Brand',
+      name: 'brand',
       component: Brand
     },
     {
