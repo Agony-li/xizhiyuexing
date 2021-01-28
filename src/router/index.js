@@ -4,6 +4,7 @@ import Router from 'vue-router'
 const Index = resolve => require(['@/views/index'], resolve)
 const Product = resolve => require(['@/views/product'], resolve)
 const Brand = resolve => require(['@/views/brand'], resolve)
+const Aboutus = resolve => require(['@/views/aboutus'], resolve)
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ const router = new Router({
       path: '/brand',
       name: 'Brand',
       component: Brand
+    },
+    {
+      path: '/aboutus',
+      name: 'aboutus',
+      component: Aboutus
     }
   ]
 })
