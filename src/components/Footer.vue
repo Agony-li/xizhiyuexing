@@ -9,7 +9,7 @@
         <img src="../../public/image/miniapp.png" alt="">
         <div>小程序二维码</div>
       </div>
-      <div class="content_des">圣人之道，吾性自足，不假外求，每个人都是自己最好的医生。</div>
+      <div class="content_des">远离亚健康，重新定义健康生活方式。</div>
     </div>
   </div>
 </template>
